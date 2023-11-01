@@ -63,6 +63,21 @@ Certainly! Let's break down the JavaScript part of the Tic-Tac-Toe game into sim
 
 10. **Updating the Score Display:**
     - We have two elements to display the score for X and O. We update these elements whenever the score changes.
+   
+    - We create a grid of 9 cells (3x3) for the game board using HTML and CSS.
+Each cell can be clicked, and when it's clicked, we check if it's empty and the game is not over.
+If those conditions are met, we mark the cell with the current player's symbol (either X or O), and we make it unclickable for the rest of the game (no-hover class is added).
+After marking a cell, we check if there's a winner. If there is a winner, we display a message.
+Restarting the Game:
+
+The restart button allows us to reset the game. All cells become empty, and the game can be played again. The current player is set to X, and the game is not over.
+Game Modes:
+
+You can choose to play against another human or the computer using radio buttons. If you choose the computer mode, the computer will make random moves for the opponent (O).
+Score Display:
+
+The game keeps track of the score for both players (X and O) and updates the score display whenever there's a winner.
+
 
 11. **Handling Mode Change:**
     - We listen for changes in the game mode (human or computer) and update the game behavior accordingly. If you switch to the computer mode and it's the computer's turn, it makes a move.
