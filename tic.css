@@ -1,0 +1,61 @@
+/* Style the game board and cells */
+.tic-tac-toe {
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(174, 236, 4);
+
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    background-color: #117cb6;
+}
+
+/* Style the restart button */
+.restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc43cd;
+    color: #011008;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.restart-button:hover {
+    background-color: rgb(231, 29, 62);
+}
+
+/* Style the message and scoreboard */
+.message {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.scoreboard {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Style for highlighting the winning cells */
+.cell.winner {
+    background-color: #ec7eeb;
+    color: #fff;
+}
+
+/* Style the radio button labels */
+.mode label {
+    display: block;
+    margin: 5px 0;
+}

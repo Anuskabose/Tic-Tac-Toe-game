@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" type="text/css" href="tic.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe Game</h1>
+    <div class="tic-tac-toe">
+        <div class="mode">
+            <label><input type="radio" name="mode" value="human" checked> Play against a Human</label>
+            <label><input type="radio" name="mode" value="computer"> Play against the Computer</label>
+        </div>
+        <div class="board" id="board">
+            <!-- Create the 3x3 Tic-Tac-Toe grid -->
+        </div>
+        <div class="message" id="message"></div>
+        <div class="scoreboard" id="scoreboard">
+            <span id="playerXScore">Player X: 0</span>
+            <span id="playerOScore">Player O: 0</span>
+        </div>
+        <button class="restart-button" id="restart">Restart Game</button>
+    </div>
+    <script src="tac.js"></script>
+</body>
+</html>
